@@ -3,21 +3,22 @@
         <meta charset="utf-8">
         <title>Fibonacci Sequence</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=ABeeZee|Ropa+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Fibonacci Sequence</h1>
-        <p>The Fibonacci sequence is a widely known maths formula. Each number in the sequence is the sum of the previous two numbers in the sequence.</p>
+        <h1>The Fibonacci Sequence</h1>
+        <p>The Fibonacci sequence is a widely known maths formula.</p> 
+        <p>Each number in the sequence is the sum of the previous two numbers in the sequence.</p>
         <p>Please provide how far in the sequence you would like to go.</p>
 
         <form onsubmit="return false">
             <input id = "input" type="number" required placeholder = "Type the number here...">
-            <button onclick = "fSequence()">Generate sequence</button>
-            <button id = "resetButton" type = "reset" onclick = "reset()">Reset</button>
         </form>
 
-        <div>
-            <p id = "resultSection"></p>
-        </div>
+        <button onclick = "fSequence()">Generate sequence</button>
+        <button id = "resetButton" type = "reset" onclick = "reset()">Reset sequence</button>
+
+        <p id = "resultSection"></p>
 
         <script src="scripts.js" ></script>
     </body>
